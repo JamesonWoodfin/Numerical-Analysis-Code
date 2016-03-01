@@ -10,7 +10,10 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Define useful functions
+#Define useful functions:
+
+#Computes and displays frequency graph.
+#Returns frequency array for further analysis.
 def histGen(w, t_i, N, clr, fig):
     freq = np.zeros(13)
     x = np.zeros(13)
@@ -60,6 +63,7 @@ def histGen(w, t_i, N, clr, fig):
     
     return freq
 
+#Takes frequencies then computes and plots mean values
 def plotMean(x):
     mean_t = np.zeros((2, 5))
     mean_t[1] = [0.2, 0.3, 0.6, 1.2, 2.0]
